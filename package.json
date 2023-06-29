@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "programmer765",
+  "license": "ISC",
+  "dependencies": {
+    "@translate-tools/core": "^0.2.15",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
