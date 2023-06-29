@@ -10,7 +10,6 @@ app.use(cors());
 const translator = new GoogleTranslator();
 
 app.post("/translate", (req, res) => {
-  console.log(req.body);
   console.log(req.body.text);
   translator
     .translate(req.body.text, "en", "hi")
@@ -20,6 +19,10 @@ app.post("/translate", (req, res) => {
     .catch((err) => {
       res.status(500).send({ error: err });
     });
+});
+
+app.get("/", (req, res) => {
+  res.send("It's working");
 });
 
 app.listen(8000, () => {
